@@ -1,0 +1,21 @@
+HOW TO RUN (Windows)
+====================
+
+BEFORE YOU START (one time)
+ 1. PostgreSQL must be running, and a database named  form_builder  must exist (create it in pgAdmin).
+ 2. Open the file  .env  in this folder (right-click > Open with Notepad).
+    Set  DB_PASSWORD=  to your PostgreSQL password and save.
+    (Easier: copy your old .env file from your previous project folder into this folder and replace.)
+ 3. Close any old terminals that are still running the app.
+
+RUN
+ 1. Double-click  run_backend.bat   -> wait until you see "Application startup complete". Keep the window open.
+ 2. Double-click  run_frontend.bat  -> wait until you see "Local: http://localhost:5173". Keep the window open.
+
+OPEN IN BROWSER
+ - App (login / sign up / dashboard):   http://localhost:5173
+ - API testing page (Swagger):          http://127.0.0.1:8000/docs
+ - Database check:                      http://127.0.0.1:8000/health/db
+
+TEST THE FORM APIs
+ See docs/API_GUIDE.md
